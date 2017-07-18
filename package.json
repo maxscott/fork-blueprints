@@ -1,7 +1,7 @@
 {
   "name": "fork-blueprints",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Copy any ember (legacy) blueprint into your blueprints folder",
   "keywords": [
     "ember-addon"
   ],
@@ -18,7 +18,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.0.0"
+    "ember-cli-babel": "^6.0.0",
+    "fs-extra": "^4.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

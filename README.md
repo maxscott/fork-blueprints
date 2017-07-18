@@ -1,26 +1,19 @@
 # fork-blueprints
 
-This README outlines the details of collaborating on this Ember addon.
+This addon houses the script to copy/fork any (legacy) ember blueprints into your app's blueprint folder.
 
-## Installation
+## Installing
 
 * `git clone <repository-url>` this repository
 * `cd fork-blueprints`
 * `npm install`
+* `npm link`
+* `cd ../my-app`
+* `npm link fork-blueprints`
 
 ## Running
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+To "fork" the route & route-test blueprint:
 
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+* `ember g fork-blueprints route`
+* `ember g fork-blueprints route-test`
